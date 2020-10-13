@@ -1,0 +1,24 @@
+- Why nodejs is using require instead of import?
+	react has ES6 from babel
+	but node still has ES5
+	Babel: a package that translates ES6 and above syntax to ES5 code.
+
+
+	that's why node.js only uses require and not import.
+
+- What are the different ways/options to move from require
+ 	to import?
+	 update to version 14. + in nodejs
+	 and add 
+	 "type": "module", in the package.json
+
+- Change the notes app to use import & export instead of 
+	require and module.exports
+
+import chalk from 'chalk';
+import yargs from 'yargs';
+
+we must change every require to import?
+we must export default in files we want to import 
+add to package.json this entry:
+  "type": "module",
